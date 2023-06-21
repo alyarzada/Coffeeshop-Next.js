@@ -1,0 +1,208 @@
+{
+  "coffees": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "amount": 0,
+      "price": 2.99,
+      "img": "https://www.tasteofhome.com/wp-content/uploads/2023/03/TOH-espresso-GettyImages-1291298315-JVcrop.jpg",
+      "ingredients": [
+        "Coffee Beans",
+        "Water"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "amount": 0,
+      "price": 3.49,
+      "img": "https://www.torani.com/sites/default/files/recipes/illustration/Cappuccino%20with%20spice%20and%20beans.jpg",
+      "ingredients": [
+        "Espresso",
+        "Milk",
+        "Foam"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "amount": 0,
+      "price": 3.99,
+      "img": "https://www.foodandwine.com/thmb/CCe2JUHfjCQ44L0YTbCu97ukUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg",
+      "ingredients": [
+        "Espresso",
+        "Milk"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mocha",
+      "amount": 0,
+      "price": 4.29,
+      "img": "https://images.ctfassets.net/v601h1fyjgba/4mf4LfyiIKLvOw72oPDgD3/cca493e3a33d080f4a7e6eade04af27a/Caf___Mocha.jpg",
+      "ingredients": [
+        "Espresso",
+        "Chocolate",
+        "Milk"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Americano",
+      "amount": 0,
+      "price": 2.79,
+      "img": "https://cdn.yemek.com/mnresize/940/940/uploads/2015/04/americano.jpg",
+      "ingredients": [
+        "Espresso",
+        "Hot Water"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Macchiato",
+      "amount": 0,
+      "price": 3.79,
+      "img": "https://i.nefisyemektarifleri.com/2023/04/28/macchiato-nedir-nasil-yapilir-icilir.jpg",
+      "ingredients": [
+        "Espresso",
+        "Milk",
+        "Caramel"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Flat-White",
+      "amount": 0,
+      "price": 3.99,
+      "img": "https://www.foodandwine.com/thmb/xQZv2CX6FO5331PYK7uGPF1we9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Flat-White-FT-BLOG0523-b11f6273c2d84462954c2163d6a1076d.jpg",
+      "ingredients": [
+        "Espresso",
+        "Milk"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mochaccino",
+      "amount": 0,
+      "price": 4.49,
+      "img": "https://shottbeverages.com/wp-content/uploads/2017/09/Coconut-Mochaccino_preview.jpg",
+      "ingredients": [
+        "Espresso",
+        "Chocolate",
+        "Milk",
+        "Foam"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Iced Coffee",
+      "amount": 0,
+      "price": 3.99,
+      "img": "https://www.allrecipes.com/thmb/Hqro0FNdnDEwDjrEoxhMfKdWfOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21667-easy-iced-coffee-ddmfs-4x3-0093-7becf3932bd64ed7b594d46c02d0889f.jpg",
+      "ingredients": [
+        "Coffee",
+        "Milk",
+        "Ice"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Vienna",
+      "amount": 0,
+      "price": 4.99,
+      "img": "https://tarasmulticulturaltable.com/wp-content/uploads/2020/06/Einsp%C3%A4nner-Viennese-Coffee-with-Whipped-Cream-3-of-3.jpg",
+      "ingredients": [
+        "Espresso",
+        "Whipped Cream",
+        "Chocolate"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Frappuccino",
+      "amount": 0,
+      "price": 4.79,
+      "img": "https://izzycooking.com/wp-content/uploads/2020/02/Java-Chip-Frappuccino-thumbnail.jpg",
+      "ingredients": [
+        "Coffee",
+        "Milk",
+        "Ice",
+        "Sugar",
+        "Flavoring"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Turkish Coffee",
+      "amount": 0,
+      "price": 3.49,
+      "img": "https://cdn.yemek.com/mnresize/940/940/uploads/2015/04/americano.jpg",
+      "ingredients": [
+        "Coffee",
+        "Water",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Irish Coffee",
+      "amount": 0,
+      "price": 5.49,
+      "img": "https://assets.epicurious.com/photos/5bdb0b6da54ae06c159f858c/4:3/w_4444,h_3333,c_limit/irish-coffee-whiskey-cocktail-recipe-110118.jpg",
+      "ingredients": [
+        "Coffee",
+        "Irish Whiskey",
+        "Sugar",
+        "Cream"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Affogato",
+      "amount": 0,
+      "price": 4.99,
+      "img": "https://www.thespruceeats.com/thmb/5PcCBEaUd1U1eFxfcKKPLVnZzfA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/affogato-4776668-hero-08-40d7a68d12ba46f48eaea3c43aba715c.jpg",
+      "ingredients": [
+        "Espresso",
+        "Vanilla Ice Cream"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Caramel Macchiato",
+      "amount": 0,
+      "price": 4.49,
+      "img": "https://coffeeaffection.com/wp-content/uploads/2021/08/cloud-caramel-macchiato-and-slice-of-cake_joloei_Shutterstock.jpg",
+      "ingredients": [
+        "Espresso",
+        "Milk",
+        "Caramel"
+      ]
+    }
+  ],
+  "cartItems": [
+    {
+      "id": 5,
+      "name": "Americano",
+      "price": 2.79,
+      "img": "https://cdn.yemek.com/mnresize/940/940/uploads/2015/04/americano.jpg",
+      "ingredients": [
+        "Espresso",
+        "Hot Water"
+      ],
+      "amount": null
+    },
+    {
+      "id": 8,
+      "name": "Mochaccino",
+      "price": 4.49,
+      "img": "https://shottbeverages.com/wp-content/uploads/2017/09/Coconut-Mochaccino_preview.jpg",
+      "ingredients": [
+        "Espresso",
+        "Chocolate",
+        "Milk",
+        "Foam"
+      ]
+    }
+  ]
+}
