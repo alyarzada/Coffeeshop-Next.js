@@ -1,27 +1,27 @@
+import { getAllCoffees, getSingleCoffee } from "@/services/coffeesReqs";
+import { CoffeeType } from "@/types";
 import Button from "../components/Button";
-
-export const getSingleCoffee = async (id) => {
-  const response = await fetch(`http://localhost:3004/coffees/${id}`);
-  return response.json();
-};
-
-export const getAllCoffees = async () => {
-  const response = await fetch(`http://localhost:3004/coffees`);
-  return response.json();
-};
+import Image from "next/image";
 
 export async function generateStaticParams() {
-  const coffees = await getAllCoffees();
-  return coffees.map((coffee) => ({ id: String(coffee.id) }));
+  const coffees: Array<CoffeeType> = await getAllCoffees();
+  return coffees.map((coffee: CoffeeType) => ({ id: String(coffee.id) }));
 }
 
-const Coffee = async ({ params }) => {
-  const coffee = await getSingleCoffee(params.id);
+interface Props {
+  params: {
+    id: number;
+  };
+}
+
+const Coffee: React.FC<Props> = async ({ params }) => {
+  const coffee: CoffeeType = await getSingleCoffee(params.id);
 
   return (
     <div className="flex items-center justify-center">
       <div className="w-[40%]">
-        <img
+        <Image
+          fill
           className="w-full rounded shadow shadow-lg"
           src={coffee.img}
           alt={coffee.name}
@@ -36,7 +36,7 @@ const Coffee = async ({ params }) => {
           <div className="flex justify-between items-center">
             <div>
               <ul className="flex gap-x-2">
-                {coffee.ingredients.map((ingredient, index) => (
+                {coffee.ingredients.map((ingredient: string, index: number) => (
                   <li key={index} className="text-[#A1693D] text-sm">
                     {ingredient}
                     <span>
@@ -47,7 +47,7 @@ const Coffee = async ({ params }) => {
               </ul>
             </div>
 
-            <Button id={params.id} coffee={coffee} />
+            <Button coffee={coffee} />
           </div>
         </div>
       </div>

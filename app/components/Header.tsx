@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <header className="flex justify-between items-center px-[50px] py-[30px] mb-[40px]">
       <Link href={"/"} className="italic">
@@ -10,10 +15,13 @@ const Header = () => {
       <nav>
         <ul className="flex gap-x-10">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href={"/card"}>Card</Link>
+            <Link href="/card">Card</Link>
+          </li>
+          <li>
+            <Link href="/test">Test Page</Link>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,11 @@
 import MenuItem from "./MenuItem";
+import { CoffeeType } from "@/types";
 
-const Menu = async ({ data }) => {
+interface Props {
+  data: CoffeeType[];
+}
+
+const Menu: React.FC<Props> = async ({ data }) => {
   return (
     <div id="menu" className="mt-10 p-36">
       <h2 className="text-[24px] text-center text-teal-400">Menu</h2>

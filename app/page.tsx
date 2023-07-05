@@ -1,18 +1,10 @@
 import Image from "next/image";
 import Menu from "./components/Menu";
-
-const fetchCoffees = async () => {
-  const res = await fetch("http://localhost:3004/coffees");
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-};
+import { getAllCoffees } from "@/services/coffeesReqs";
+import { CoffeeType } from "@/types";
 
 export default async function Home() {
-  const coffees = await fetchCoffees();
+  const coffees: Array<CoffeeType> = await getAllCoffees();
 
   return (
     <main>

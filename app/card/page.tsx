@@ -1,16 +1,12 @@
 import Image from "next/image";
 import CardItem from "./components/CardItem";
-
-export const getAllCardItems = async () => {
-  const resp = await fetch("http://localhost:3004/cartItems", {
-    cache: "no-store",
-  });
-
-  return resp.json();
-};
+import { getAllCardItems } from "@/services/cardItemsReqs";
+import { CoffeeType } from "@/types";
 
 const Card = async () => {
-  const cardItems = await getAllCardItems();
+  const cardItems: Array<CoffeeType> = await getAllCardItems();
+
+  console.log("Card rendered on the server");
 
   return (
     <div className="px-10">
@@ -21,7 +17,7 @@ const Card = async () => {
           <div className="h-[320px] w-[400px] overflow-auto">
             {cardItems.length > 0 ? (
               <ul>
-                {cardItems.map((item) => (
+                {cardItems.map((item: CoffeeType) => (
                   <CardItem key={item.id} item={item} />
                 ))}
               </ul>

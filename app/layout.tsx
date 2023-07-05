@@ -1,7 +1,9 @@
 import Header from "./components/Header";
-import "./globals.css";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import Providers from "@/providers";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Toaster />
+      <body className={`${inter.className}`}>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );

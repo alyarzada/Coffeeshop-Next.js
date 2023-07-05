@@ -1,25 +1,23 @@
 "use client";
-import toast from "react-hot-toast";
 
-const Button = ({ id, coffee }) => {
-  const addToCart = async () => {
-    try {
-      const resp = await fetch("http://localhost:3004/cartItems", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(coffee),
-      });
-      const json = await resp.json();
-      toast.success("Coffee added into your cart 🥰");
-      return json;
-    } catch (err) {
-      toast.error("Coffee is already in your cart 🙄");
-    }
-  };
+import { CoffeeType } from "@/types";
+import { addToCart } from "@/services/cardItemsReqs";
+import { useRouter } from "next/navigation";
+
+interface Props {
+  coffee: CoffeeType;
+}
+
+const Button: React.FC<Props> = ({ coffee }) => {
+  const router = useRouter();
 
   return (
     <button
-      onClick={addToCart}
+      onClick={async () => {
+        await addToCart(coffee);
+        router.replace("/card");
+        setTimeout(() => router.refresh(), 1000);
+      }}
       className="bg-teal-400 hover:bg-teal-500 transition-all duration-300 text-slate-50 p-2 rounded text-sm"
     >
       Add to Card ☕
