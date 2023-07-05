@@ -22,7 +22,7 @@ const Coffee: React.FC<Props> = async ({ params }) => {
       <div className="w-[40%]">
         <Image
           fill
-          className="w-full rounded shadow shadow-lg"
+          className="w-full rounded shadow-lg"
           src={coffee.img}
           alt={coffee.name}
         />
