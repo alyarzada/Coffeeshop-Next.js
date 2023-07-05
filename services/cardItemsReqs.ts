@@ -8,8 +8,6 @@ interface argType {
 }
 
 const getAllCardItems = async (): Promise<CoffeeType[]> => {
-  console.log("getAllCardItems run on the server");
-
   const resp = await fetch("http://localhost:3004/cartItems", {
     cache: "no-store",
   });

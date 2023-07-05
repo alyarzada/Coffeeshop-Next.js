@@ -17,8 +17,6 @@ interface Props {
 const CardItem: React.FC<Props> = ({ item }) => {
   const router = useRouter();
 
-  console.log("CardItem also rendered!");
-
   const { mutate: deleteHandler } = useMutation({
     mutationFn: deleteCardItem,
     onSuccess: () => router.refresh(),

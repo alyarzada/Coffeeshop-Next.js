@@ -6,8 +6,6 @@ import { CoffeeType } from "@/types";
 const Card = async () => {
   const cardItems: Array<CoffeeType> = await getAllCardItems();
 
-  console.log("Card rendered on the server");
-
   return (
     <div className="px-10">
       <h2 className="text-xl text-teal-400 font-semibold">Card</h2>
