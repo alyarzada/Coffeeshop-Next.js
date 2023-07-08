@@ -9,6 +9,8 @@ First, run the development server:
 - git clone https://github.com/alyarzada/react-advanced-dashboard
 
 2. Install node modules and start development server:
+
+```bash
 - npm install && npm run dev
 
 ```bash
