@@ -9,7 +9,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ```bash
 npm install
+```
 
+3. Start Development server:
+
+```bash
 npm run dev
 # or
 yarn dev
@@ -17,7 +21,7 @@ yarn dev
 pnpm dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Technology Stack
 
