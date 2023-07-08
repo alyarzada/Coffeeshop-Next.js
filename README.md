@@ -23,7 +23,13 @@ yarn dev
 pnpm dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Start Json server
+
+```bash
+npm run json-server
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Technology Stack
 
