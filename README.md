@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project with brand new "App" directory
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/alyarzada/react-advanced-dashboard
+git clone https://github.com/alyarzada/coffeeshop-app-next
 ```
 
 2. Install dependencies
@@ -27,16 +27,11 @@ pnpm dev
 
 ## Technology Stack
 
-- React + Vite
-- Ant Design  
-- Uno CSS
-- React-parallax-tilt
-- React-type-animation
-- React-vertical-timeline-component
-- React Router
-- Swiper
-- Framer Motion
-- Three.js + React-three
-
-P.S To see all, please check out package.json file
+- Next.js 13 (App dir)
+- TypeScript 
+- Tailwind CSS
+- Tanstack/React-Query 
+- Json-Server
+- React-Hot-Toast
+- React-Icons
 
