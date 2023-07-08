@@ -7,8 +7,6 @@ import {
 } from "@/services/cardItemsReqs";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-import { CoffeeType } from "@/types";
-import Image from "next/image";
 
 interface Props {
   item: CoffeeType;
@@ -29,7 +27,7 @@ const CardItem: React.FC<Props> = ({ item }) => {
   return (
     <li className="border-b flex justify-between items-center gap-x-2 py-3 px-2">
       <div className="flex items-center gap-x-2">
-        <Image width={70} className="rounded" src={item.img} alt="coffee" />
+        <img className="rounded h-[70px]" src={item.img} alt="coffee" />
         <h5 className="text-sm">{item.name}</h5>
       </div>
 

@@ -1,17 +1,14 @@
 import Link from "next/link";
-import { CoffeeType } from "@/types";
 import Image from "next/image";
 
-const MenuItem = ({ coffee }: { coffee: CoffeeType }) => {
+const SingleCoffee = ({ coffee }: { coffee: CoffeeType }) => {
   return (
     <div className="relative group overflow-hidden">
       <Link href={`coffees/${coffee.id}`}>
-        <Image
-          width={320}
-          height={200}
+        <img
           src={coffee.img}
           alt="coffee"
-          className="cursor-pointer rounded shadow-lg  scale-100 group-hover:scale-110 transition-all duration-300"
+          className="cursor-pointer w-[320px] h-[200px] rounded shadow-lg  scale-100 group-hover:scale-110 transition-all duration-300"
         />
         <div className="rounded absolute top-0 left-0 w-full h-full bg-black/30 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300" />
       </Link>
@@ -23,4 +20,4 @@ const MenuItem = ({ coffee }: { coffee: CoffeeType }) => {
   );
 };
 
-export default MenuItem;
+export default SingleCoffee;

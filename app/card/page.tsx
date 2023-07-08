@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CardItem from "./components/CardItem";
 import { getAllCardItems } from "@/services/cardItemsReqs";
-import { CoffeeType } from "@/types";
 
 const Card = async () => {
   const cardItems: Array<CoffeeType> = await getAllCardItems();

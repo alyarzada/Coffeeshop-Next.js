@@ -15,10 +15,14 @@ const Header = () => {
       <nav>
         <ul className="flex gap-x-10">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" prefetch={false}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/card">Card</Link>
+            <Link prefetch={false} href="/card">
+              Card
+            </Link>
           </li>
           <li>
             <Link href="/test">Test Page</Link>

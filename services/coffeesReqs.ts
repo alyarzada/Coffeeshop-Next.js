@@ -1,5 +1,3 @@
-import { CoffeeType } from "@/types";
-
 const getAllCoffees = async (): Promise<CoffeeType[]> => {
   const res = await fetch("http://localhost:3004/coffees");
 

@@ -1,5 +1,4 @@
-import MenuItem from "./MenuItem";
-import { CoffeeType } from "@/types";
+import SingleCoffee from "./SingleCoffee";
 
 interface Props {
   data: CoffeeType[];
@@ -12,7 +11,7 @@ const Menu: React.FC<Props> = async ({ data }) => {
       <hr className="mb-10 mt-2" />
       <div className="grid grid-cols-3 place-items-center gap-6">
         {data.map((coffee) => (
-          <MenuItem key={coffee.id} coffee={coffee} />
+          <SingleCoffee key={coffee.id} coffee={coffee} />
         ))}
       </div>
     </div>

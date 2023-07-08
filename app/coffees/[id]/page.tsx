@@ -1,5 +1,4 @@
 import { getAllCoffees, getSingleCoffee } from "@/services/coffeesReqs";
-import { CoffeeType } from "@/types";
 import Button from "../components/Button";
 import Image from "next/image";
 
@@ -20,8 +19,7 @@ const Coffee: React.FC<Props> = async ({ params }) => {
   return (
     <div className="flex items-center justify-center">
       <div className="w-[40%]">
-        <Image
-          fill
+        <img
           className="w-full rounded shadow-lg"
           src={coffee.img}
           alt={coffee.name}

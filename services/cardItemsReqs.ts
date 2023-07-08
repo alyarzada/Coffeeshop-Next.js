@@ -1,4 +1,3 @@
-import { CoffeeType } from "@/types";
 import { toast } from "react-hot-toast";
 
 interface argType {

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Menu from "./components/Menu";
 import { getAllCoffees } from "@/services/coffeesReqs";
-import { CoffeeType } from "@/types";
 
 export default async function Home() {
   const coffees: Array<CoffeeType> = await getAllCoffees();
