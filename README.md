@@ -3,7 +3,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 1. Clone the repository:
-- git clone https://github.com/alyarzada/react-advanced-dashboard
+```bash
+git clone https://github.com/alyarzada/react-advanced-dashboard
+```
 
 2. Install dependencies
 
