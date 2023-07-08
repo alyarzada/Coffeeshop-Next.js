@@ -5,13 +5,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Clone the repository:
 - git clone https://github.com/alyarzada/react-advanced-dashboard
 
-2. Install node modules and start development server:
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Start Development server:
+3. Start development server:
 
 ```bash
 npm run dev
